@@ -1,9 +1,11 @@
 {
-    "fekit_extension_command_name":"template",
-    "name": "fekit-extension-template",
+    "fekit_extension_command_name":"svn",
+    "name": "fekit-extension-svn",
     "version": "0.0.1",
-    "description": "",
-    "dependencies": {},
+    "description": "为fekit增加svn基本命令",
+    "dependencies": {
+        "date-utils":"*"
+    },
     "main": "index.js",
     "scripts": {},
     "repository": "",
