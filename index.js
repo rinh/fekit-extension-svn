@@ -34,6 +34,12 @@ function use( args , cb ) {
     var output = ''
     svn.stdout.on('data',function(data){ output += data; });
 
+    svn.on('error',function(err){
+        if( err.code == 'ENOENT' ) {
+            return cb('[ERROR] 找不到svn命令，请确认您是否正确安装了svn命令行工具。');
+        }
+    })
+
     svn.on('exit',function(code, signal){
         switch( code ) {
             case 1:
