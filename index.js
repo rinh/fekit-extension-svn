@@ -112,7 +112,7 @@ exports.set_options = function( optimist ){
     optimist.describe('c','检出指定项目的trunk，如 fekit svn -c flight')
 
     optimist.alias('b','branch')
-    return optimist.describe('q','创建新的分支，如 fekit svn -b flight:bugfix')
+    return optimist.describe('b','创建新的分支，如 fekit svn -b flight:bugfix')
 
 }
 

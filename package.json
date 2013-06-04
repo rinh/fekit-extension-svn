@@ -1,7 +1,7 @@
 {
     "fekit_extension_command_name":"svn",
     "name": "fekit-extension-svn",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "为fekit增加svn基本命令",
     "dependencies": {
         "date-utils":"*"
